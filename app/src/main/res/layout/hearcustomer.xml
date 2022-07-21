@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="@dimen/three_hundred"
+        android:layout_height="@dimen/hundred_eighty"
+        android:layout_marginLeft="@dimen/ten"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_marginRight="@dimen/five"
+        android:layout_marginBottom="@dimen/ten"
+        app:cardCornerRadius="@dimen/ten"
+        app:cardElevation="@dimen/ten">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_back1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/sixty"
+                android:layout_height="@dimen/sixty"
+                android:src="@drawable/profileimage"
+                android:layout_margin="@dimen/ten"
+                app:civ_border_color="@color/astrocolor2"
+                app:civ_border_width="@dimen/three"/>
+
+            <TextView
+                android:id="@+id/text_CustomerNmae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten"
+                android:text="Sundar Pichai"
+                android:textColor="@color/astrocolor_buttom"
+                android:layout_toRightOf="@id/profile_image"
+                android:layout_marginTop="@dimen/ten"
+                android:textSize="@dimen/edittextsize">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_CustomerStatues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten"
+                android:text="C.E.O Google"
+                android:layout_below="@+id/text_CustomerNmae"
+                android:textColor="#63615D"
+                android:layout_toRightOf="@id/profile_image"
+                android:layout_marginTop="@dimen/three"
+                android:textSize="@dimen/textsize">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+                android:textColor="#000000"
+                android:lineSpacingExtra="5dp"
+                android:layout_below="@id/profile_image"
+                android:textSize="@dimen/twelve_size"
+                android:layout_marginTop="@dimen/five"
+                android:layout_centerHorizontal="true">
+
+            </TextView>
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

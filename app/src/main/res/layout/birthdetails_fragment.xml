@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_marginLeft="@dimen/fifteen"
+        android:layout_marginRight="@dimen/fifteen">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:hint="D.O.B"
+            app:boxStrokeColor="@color/astrocolor"
+            app:hintTextColor="#94979A">
+
+            <EditText
+                android:id="@+id/edit_DOB"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/ten"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:hint="Birth Time"
+            app:boxStrokeColor="@color/astrocolor"
+            app:hintTextColor="#94979A">
+
+            <EditText
+                android:id="@+id/edit_BirthTime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/ten"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:hint="Birth Location"
+            app:boxStrokeColor="@color/astrocolor"
+            app:hintTextColor="#94979A">
+
+            <EditText
+                android:id="@+id/edit_BirthLocation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/ten"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:hint="Birth City"
+            app:boxStrokeColor="@color/astrocolor"
+            app:hintTextColor="#94979A">
+
+            <EditText
+                android:id="@+id/edit_BirthCity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/ten"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:hint="Birth State"
+            app:boxStrokeColor="@color/astrocolor"
+            app:hintTextColor="#94979A">
+
+            <EditText
+                android:id="@+id/edit_BirthState"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/ten"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:hint="Birth Country"
+            app:boxStrokeColor="@color/astrocolor"
+            app:hintTextColor="#94979A">
+
+            <EditText
+                android:id="@+id/edit_BirthCountry"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/ten"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_below="@+id/text_ForgotPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/forty"
+            android:layout_marginRight="@dimen/forty"
+            android:layout_marginTop="@dimen/ten"
+            android:text="UPDATE"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_back_bg"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize"
+            android:layout_marginBottom="@dimen/ten"/>
+    </LinearLayout>
+
+</RelativeLayout>

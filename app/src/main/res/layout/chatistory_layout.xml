@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hundred_fifty"
+        app:cardCornerRadius="@dimen/five"
+        android:layout_marginLeft="@dimen/five"
+        android:layout_marginRight="@dimen/five"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginBottom="@dimen/ten"
+        app:cardElevation="@dimen/ten"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/five"
+            android:layout_marginRight="@dimen/five"
+            android:layout_marginBottom="@dimen/five"
+            android:layout_marginTop="@dimen/ten">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:id="@+id/date"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/button"
+                    android:layout_alignParentLeft="true">
+
+                    <TextView
+                        android:id="@+id/datetime"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="wrap_content"
+                        android:text="Date &amp; Time : "
+                        android:textColor="@color/astrocolor3"
+                        android:textSize="@dimen/ten"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/text_dateTime"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.1"
+                        android:layout_height="wrap_content"
+                        android:text="12/02/2022 10:35:58"
+                        android:textColor="#817F7F"
+                        android:textSize="@dimen/ten"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/five"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" VIEW MESSAGE "
+                        android:textColor="@color/astrocolor3"
+                        android:textSize="@dimen/eight"
+                        android:textStyle="bold"
+                        android:padding="@dimen/six"
+                        android:layout_marginRight="@dimen/five"
+                        android:background="@drawable/history_bg2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  DELETE  "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/eight"
+                        android:textStyle="bold"
+                        android:padding="@dimen/six"
+                        android:layout_marginLeft="@dimen/five"
+                        android:backgroundTint="@color/history_bottom"
+                        android:background="@drawable/history_bg1"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/ten"
+                android:background="#646667"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/twelve">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:text="Chat Id :"
+                    android:textColor="@color/astrocolor3"
+                    android:textSize="@dimen/ten"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_SessionID"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.2"
+                    android:layout_height="wrap_content"
+                    android:text="ASC-87895 858 96"
+                    android:textColor="#817F7F"
+                    android:textSize="@dimen/ten"
+                    android:textStyle="bold" />
+
+                <!--<TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:text="Call Log ID :"
+                    android:textColor="@color/astrocolor3"
+                    android:textSize="@dimen/twelve_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_CallLogID"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.2"
+                    android:layout_height="wrap_content"
+                    android:text="ASC-87895 858 96"
+                    android:textColor="#817F7F"
+                    android:textSize="@dimen/twelve_size"
+                    android:textStyle="bold" />-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_marginTop="@dimen/twelve">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:text="Astrologer :"
+                    android:textColor="@color/astrocolor3"
+                    android:textSize="@dimen/ten"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_Astrologer"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.2"
+                    android:layout_height="wrap_content"
+                    android:text="Sunil kumar dash"
+                    android:textColor="#817F7F"
+                    android:textSize="@dimen/ten"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.1"
+                    android:layout_height="wrap_content"
+                    android:text="Amount Charged :"
+                    android:textColor="@color/astrocolor3"
+                    android:textSize="@dimen/ten"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_PerMinCharges"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 235.00"
+                    android:textColor="#817F7F"
+                    android:textSize="@dimen/ten"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_marginTop="@dimen/twelve">
+
+                <TextView
+                    android:id="@+id/text_CallDuration"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:text="Call Duration  :"
+                    android:textColor="@color/astrocolor3"
+                    android:textSize="@dimen/twelve_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="00:05:32"
+                    android:textColor="#817F7F"
+                    android:textSize="@dimen/twelve_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.1"
+                    android:layout_height="wrap_content"
+                    android:text="Amount Charged"
+                    android:textColor="@color/astrocolor3"
+                    android:textSize="@dimen/twelve_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_AmountCharged"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 235.00"
+                    android:textColor="#817F7F"
+                    android:textSize="@dimen/twelve_size"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/twelve">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:text="Reviews : "
+                    android:textColor="@color/astrocolor3"
+                    android:textSize="@dimen/ten"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_Reviews"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:text="To use a custom drawable background with"
+                    android:textColor="#817F7F"
+                    android:textSize="@dimen/ten"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

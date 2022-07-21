@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTPVerification">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_centerInParent="true">
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/fifty"
+           android:src="@drawable/logo2"
+           android:layout_gravity="center"
+           android:layout_marginBottom="@dimen/ten">
+
+       </ImageView>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Enter 6 digit OTP Sent to Your "
+           android:textColor="#817F7F"
+           android:textSize="@dimen/textsize"
+           android:textStyle="bold"
+           android:gravity="center"
+           android:layout_marginTop="@dimen/fifteen"/>
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/sociallogin"
+           android:layout_gravity="center"
+           android:layout_marginTop="@dimen/ten">
+
+           <TextView
+               android:id="@+id/login"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Mobile No. "
+               android:textColor="#817F7F"
+               android:textSize="@dimen/textsize"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/text_signin"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@id/login"
+               android:text="1234 xxxx 90"
+               android:textColor="#817F7F"
+               android:textSize="@dimen/textsize" />
+
+
+       </RelativeLayout>
+
+       <in.aabhasjindal.otptextview.OtpTextView
+           android:id="@+id/otp_view"
+           android:layout_below="@+id/opt"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:textColor="@color/black"
+           app:height="@dimen/forty"
+           android:layout_gravity="center"
+           app:bar_enabled="true"
+           app:bar_height="@dimen/three"
+           app:bar_margin="@dimen/five"
+           app:hide_otp_drawable="@dimen/ten"
+           app:bar_active_color="@color/astrocolor"
+           app:bar_inactive_color="#838182"
+           app:otp_text_size="24dp"
+           android:layout_marginTop="@dimen/fifteen"
+           app:length="6"
+           app:width="@dimen/forty" />
+
+       <com.google.android.material.button.MaterialButton
+           android:id="@+id/btn_signin"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/forty"
+           android:layout_below="@+id/text_ForgotPassword"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginLeft="@dimen/fifty"
+           android:layout_marginRight="@dimen/fifty"
+           android:layout_marginTop="@dimen/twenty"
+           android:text="Verifay &amp; Proceed"
+           app:backgroundTint="@null"
+           android:background="@drawable/button_back_bg"
+           android:textAllCaps="true"
+           android:textColor="@color/black"
+           android:textSize="@dimen/textsize" />
+
+   </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage"
+    android:background="@drawable/wheel_back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty"
+            android:src="@drawable/logo2"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/ten">
+
+        </ImageView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:gravity="center"
+            android:textSize="@dimen/twenty"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/twenty">
+
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/two_hundred"
+            app:cardCornerRadius="@dimen/five"
+            android:layout_marginLeft="@dimen/thirty"
+            android:layout_marginRight="@dimen/thirty"
+            android:layout_marginBottom="@dimen/ten"
+            android:layout_marginTop="@dimen/fifteen"
+            app:cardElevation="@dimen/ten"
+            android:background="@color/white"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:elevation="@dimen/ten">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/ten"
+                    android:hint="Email / Mobile No"
+                    app:boxStrokeColor="@color/astrocolor"
+                    app:hintTextColor="#94979A">
+
+                    <EditText
+                        android:id="@+id/edit_UserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/forty"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/ten"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/ten"
+                    android:hint="password"
+                    app:boxStrokeColor="@color/astrocolor"
+                    app:hintTextColor="#94979A">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_Password"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/forty"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/ten"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/forty"
+                    android:layout_below="@+id/text_ForgotPassword"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/forty"
+                    android:layout_marginRight="@dimen/forty"
+                    android:layout_marginTop="@dimen/ten"
+                    android:text="Login"
+                    app:backgroundTint="@null"
+                    android:background="@drawable/button_back_bg"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sociallogin"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/twenty">
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login As Astrologer "
+                android:textColor="#817F7F"
+                android:textSize="@dimen/textsize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/login"
+                android:text=" Login"
+                android:textColor="@color/astrocolor2"
+                android:textSize="@dimen/textsize" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sociallogin"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/twenty">
+
+            <TextView
+                android:id="@+id/login1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't Have an account"
+                android:textColor="#817F7F"
+                android:textSize="@dimen/textsize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_signUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/login1"
+                android:text=" Register"
+                android:textColor="@color/astrocolor2"
+                android:textSize="@dimen/textsize" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sociallogin"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/twenty">
+
+            <TextView
+                android:id="@+id/login2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot your password"
+                android:textColor="#817F7F"
+                android:textSize="@dimen/textsize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_resetNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/login2"
+                android:text=" Reset Now"
+                android:textColor="@color/astrocolor2"
+                android:textSize="@dimen/textsize" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

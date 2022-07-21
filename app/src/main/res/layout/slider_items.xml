@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/ten">
+
+
+           <com.google.android.material.imageview.ShapeableImageView
+               android:id="@+id/img_showImage"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/hundred_fifty"
+               android:adjustViewBounds="true"
+               android:scaleType="fitXY"
+               android:layout_margin="@dimen/five"
+               android:src="@drawable/slide3"
+               app:shapeAppearanceOverlay="@style/roundimage">
+
+           </com.google.android.material.imageview.ShapeableImageView>
+
+
+</RelativeLayout>

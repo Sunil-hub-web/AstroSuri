@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hundred_twenty"
+        app:cardCornerRadius="@dimen/five"
+        android:layout_marginLeft="@dimen/ten"
+        android:layout_marginRight="@dimen/ten"
+        android:layout_marginBottom="@dimen/ten"
+        android:layout_marginTop="@dimen/fifteen"
+        app:cardElevation="@dimen/ten"
+        android:background="@color/white"
+        android:layout_gravity="center">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/profile_image"
+               android:layout_width="@dimen/seventy"
+               android:layout_height="@dimen/eighty"
+               android:src="@drawable/profileimage"
+               android:layout_centerVertical="true"
+               app:civ_border_color="@color/astrocolor2"
+               app:civ_border_width="@dimen/five"/>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@+id/profile_image"
+               android:layout_toLeftOf="@+id/lin_lin"
+               android:layout_centerVertical="true"
+               android:orientation="vertical"
+               android:layout_marginLeft="@dimen/fifteen">
+
+               <TextView
+                   android:id="@+id/name"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Riya Deepsi"
+                   android:textColor="@color/black"
+                   android:textSize="@dimen/edittextsize"
+                   android:textStyle="bold"></TextView>
+
+               <TextView
+                   android:id="@+id/speeklanguage"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Hindi, English, Marathi"
+                   android:textColor="@color/black"
+                   android:textSize="@dimen/twelve_size"
+                   android:drawablePadding="@dimen/five"
+                   android:layout_marginTop="@dimen/five"></TextView>
+
+               <TextView
+                   android:id="@+id/typeAstrologers"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Vastu, Vedic Astrology"
+                   android:textColor="@color/black"
+                   android:textSize="@dimen/twelve_size"
+                   android:drawablePadding="@dimen/five"
+                   android:layout_marginTop="@dimen/five"></TextView>
+
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:weightSum="2"
+                   android:layout_marginTop="@dimen/seven">
+
+                   <TextView
+                       android:id="@+id/experiences"
+                       android:layout_width="0dp"
+                       android:layout_weight="0.7"
+                       android:layout_height="wrap_content"
+                       android:text="2+ Years"
+                       android:textColor="@color/black"
+                       android:drawablePadding="@dimen/five"
+                       android:textSize="@dimen/twelve_size"></TextView>
+
+
+                   <TextView
+                       android:id="@+id/salesPrice"
+                       android:layout_width="0dp"
+                       android:layout_weight="0.8"
+                       android:layout_height="wrap_content"
+                       android:text="Rs 55.00/Min"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/twelve_size"></TextView>
+
+                   <TextView
+                       android:id="@+id/regularPrice"
+                       android:layout_width="0dp"
+                       android:layout_weight="0.8"
+                       android:layout_height="wrap_content"
+                       android:text="55.00/Min"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/ten"></TextView>
+
+               </LinearLayout>
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/lin_lin"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="@dimen/sixty"
+                       android:layout_height="wrap_content"
+                       android:text="WEEKLY"
+                       android:textColor="@color/black"
+                       android:background="@color/astrocolor_buttom"
+                       android:padding="@dimen/seven"
+                       android:gravity="center"
+                       android:layout_marginBottom="-7dp"
+                       android:textSize="@dimen/ten"></TextView>
+
+                   <TextView
+                       android:layout_width="@dimen/fifty"
+                       android:layout_height="wrap_content"
+                       android:text="DEALIS"
+                       android:gravity="center"
+                       android:layout_marginLeft="@dimen/twelve"
+                       android:textColor="@color/white"
+                       android:background="@color/astrocolor3"
+                       android:padding="@dimen/seven"
+                       android:textSize="@dimen/ten"></TextView>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/five"
+                   android:weightSum="2"
+                   android:layout_marginRight="@dimen/five">
+
+                   <ImageView
+                       android:layout_width="0dp"
+                       android:layout_weight="0.9"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/call"
+                       android:layout_marginRight="@dimen/three">
+
+
+                   </ImageView>
+
+                   <ImageView
+                       android:layout_width="0dp"
+                       android:layout_weight="0.9"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/chat"
+                       android:layout_marginLeft="@dimen/three">
+
+
+                   </ImageView>
+
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+
+
+       </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

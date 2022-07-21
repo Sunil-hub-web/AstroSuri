@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/astrocolor_buttom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/forty_five"
+        android:background="@color/astrocolor_buttom">
+
+        <ImageView
+            android:id="@+id/menuSelect"
+            android:layout_width="@dimen/twenty_five"
+            android:layout_height="@dimen/twenty_five"
+            android:src="@drawable/hamburger"
+            android:layout_centerVertical="true"
+            android:onClick="ClickMenu"
+            android:layout_marginLeft="@dimen/fifteen">
+
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/showtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/menuSelect"
+            android:layout_toLeftOf="@id/notification"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/twenty"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="@dimen/edittextsize">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="@dimen/twenty_five"
+            android:layout_height="@dimen/twenty_five"
+            android:src="@drawable/notification"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/fifteen">
+
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

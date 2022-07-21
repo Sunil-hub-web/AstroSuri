@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/fifteen">
+
+            <TextView
+                android:id="@+id/text_ChatHistory"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/menuSelect"
+                android:layout_toLeftOf="@id/notification"
+                android:layout_centerVertical="true"
+                android:text="CHAT HISTORY"
+                android:background="@drawable/history_bg1"
+                android:textColor="@color/white"
+                android:padding="@dimen/ten"
+                android:layout_margin="@dimen/ten"
+                android:textSize="@dimen/textsize"
+                android:gravity="center">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_CallHistory"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/menuSelect"
+                android:layout_toLeftOf="@id/notification"
+                android:layout_centerVertical="true"
+                android:text="CALL HISTORY"
+                android:background="@drawable/history_bg2"
+                android:textColor="@color/black"
+                android:padding="@dimen/ten"
+                android:layout_margin="@dimen/ten"
+                android:textSize="@dimen/textsize"
+                android:gravity="center">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerHistory"
+            android:layout_marginTop="@dimen/ten">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
